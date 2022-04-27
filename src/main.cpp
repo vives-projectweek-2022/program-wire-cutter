@@ -15,16 +15,16 @@ int main(void) {
 
     while(true) {
         wirecutter.feedCable(500);
-        ThisThread::sleep_for(chrono::milliseconds(2000));
+        ThisThread::sleep_for(chrono::milliseconds(1000));
         wirecutter.stripCable();
-        ThisThread::sleep_for(chrono::milliseconds(2000));
+        ThisThread::sleep_for(chrono::milliseconds(1000));
         wirecutter.feedCable(2000);
-        ThisThread::sleep_for(chrono::milliseconds(2000));
+        ThisThread::sleep_for(chrono::milliseconds(1000));
         wirecutter.stripCable();
-        ThisThread::sleep_for(chrono::milliseconds(2000));
+        ThisThread::sleep_for(chrono::milliseconds(1000));
         wirecutter.feedCable(500);
-        ThisThread::sleep_for(chrono::milliseconds(2000));
+        ThisThread::sleep_for(chrono::milliseconds(1000));
         wirecutter.cutCable();
-        ThisThread::sleep_for(chrono::milliseconds(2000));
+        ThisThread::sleep_for(chrono::milliseconds(1000));
     }
 }
